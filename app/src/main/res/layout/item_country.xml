@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/country_item_box"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    style="@style/background_white">
+    <LinearLayout
+        android:id="@+id/box_flag_country"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/detail_item_box"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <ImageView
+            android:id="@+id/flag_country_img"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            style="@style/image_item"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/detail_item_box"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="parent">
+        </ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/detail_item_box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/item_box"
+        app:layout_constraintLeft_toRightOf="@id/box_flag_country"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+            android:id="@+id/name_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_title"
+            android:text="France"/>
+        <TextView
+            android:id="@+id/capital_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text"
+            android:text="Capitale : Paris"/>
+        <TextView
+            android:id="@+id/region_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text"
+            android:text="Contient : Europe"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

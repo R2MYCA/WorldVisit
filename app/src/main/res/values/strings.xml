@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WorldVisit</string>
+    <string name="search_btn">OK</string>
+    <string name="search_btn_placeholder">Saisir un pays...</string>
+</resources>
