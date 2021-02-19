@@ -39,7 +39,7 @@
     <LinearLayout
         android:id="@+id/detail_item_box"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         style="@style/item_box"
         android:gravity="center_vertical"
         app:layout_constraintLeft_toRightOf="@id/flag_date_box"
